@@ -1,0 +1,16 @@
+// color
+$color-pink: #FFBFCB;
+$color-light-gray: #eee;
+$color-black: #000;
+
+// day
+$day-background-color: $color-light-gray;
+$day-border-color: $color-black;
+$day-hover-background-color: $color-pink;
+$day-size: 100px;
+$day-gap: 1px;
+
+// days-count
+$days-per-week: 7;
+$days-of-week: ("mon": 0, "tue": 1, "wed": 2, "thu": 3, "fri": 4, "sat": 5, "sun": 6);
+$days-in-month: 31;

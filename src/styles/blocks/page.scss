@@ -1,0 +1,9 @@
+.page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+
+  @include flex-center;
+
+  height: 100vh;
+}
