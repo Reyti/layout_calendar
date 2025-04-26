@@ -35,7 +35,7 @@ body {
     @each $name, $day in $days {
       &-#{$name} {
         .calendar__day:first-child {
-          margin-left: $day-block-size * $day + $day-block-gap * 5;
+          margin-left: $day-block-size * $day + $day-block-gap * $day;
         }
       }
     }
