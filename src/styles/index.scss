@@ -23,19 +23,19 @@ body {
     // days variables with it's positions
     $days: (
       'mon': 0,
-      'tue': $day-block-size,
-      'wed': $day-block-size * 2 + $day-block-gap * 2,
-      'thu': $day-block-size * 3 + $day-block-gap * 3,
-      'fri': $day-block-size * 4 + $day-block-gap * 4,
-      'sat': $day-block-size * 5 + $day-block-gap * 5,
-      'sun': $day-block-size * 6 + $day-block-gap * 6,
+      'tue': 1,
+      'wed': 2,
+      'thu': 3,
+      'fri': 4,
+      'sat': 5,
+      'sun': 6,
     );
 
     // loop for assigning day classes
     @each $name, $day in $days {
       &-#{$name} {
         .calendar__day:first-child {
-          margin-left: $day;
+          margin-left: $day-block-size * $day + $day-block-gap * 5;
         }
       }
     }
